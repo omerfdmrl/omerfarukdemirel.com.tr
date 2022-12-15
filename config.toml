@@ -1,0 +1,43 @@
+baseURL = 'http://example.org/'
+languageCode = 'tr-TR'
+title = 'OmerF'
+theme = 'PaperMod'
+copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. @omerfdmrl'
+enableRobotsTXT = true
+enableRssXML = true
+defaultContentLanguage = 'tr'
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+
+[menu]
+[[menu.main]]
+  name = 'Posts'
+  url = '/posts/'
+  weight = -110
+[[menu.main]]
+  name = 'Search'
+  url = '/search/'
+  weight = -100
+
+[params]
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  comments = true
+[params.homeInfoParams]
+  Title = 'Ömer Faruk Demirel'
+  Content = 'Bloguma hoşgeldiniz'
+[params.cover]
+  responsiveImages = true
+  linkFullImages = true
+[params.editPost]
+  URL = "https://github.com/omerfdmrl/omerfarukdemirel.com.tr/tree/main/content/"
+  Text = "Yazıyı Düzenle"
+  appendFilePath = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
