@@ -45,7 +45,7 @@ Kodlamaya başlamadan önce aşşağıdaki işlemleri bilmemiz gerekmektedir;
 
 1. **Zaman Karmaşıklığı:** O(log n)
 2. **Yardımcı Alan:** O(1)
-3. **Ortance Değeri Bulma:** en_yuksek + ( en_dusuk + en_yuksek ) / 2
+3. **Ortanca Değeri Bulma:** en_yuksek + ( en_dusuk + en_yuksek ) / 2
 
 Son maddede neden **en_yuksek** değer ile topladığımızı merak ediyor olabilirsiniz. Direkt olarak `( en_dusuk + en_yuksek ) / 2` de yapabilirdik fakat bu **100%** doğruluk oranı vermeyecektir. Çünkü en düşük ve en yüksek değerlerden daha büyük değerleri aldığımızda başarısız olucaktır. Özellikle en düşük ve en yüksek değerin toplamı datasetimizdeki maximum pozitif değerden büyükse başarısız olucaktır. Sonuçta toplam değer negatif olur ve 2'ye bölündüğünde negatif olarak kaldır.
 
