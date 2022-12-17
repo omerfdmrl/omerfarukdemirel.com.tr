@@ -30,7 +30,7 @@ Aşşağıdaki örnekte tek-tek yapılan kontrole kıyasla ne kadar hızlı oldu
 
 ![Binary Search Algorithm](/binary-search/algorithm.gif)
 
-Şimdi daha iyi anlamak için örnek yapıcak olursak `[-3,2,4,,4,9,12,34,42,102,157,180]`'den oluşan veri veri setinden **42** sayısını bulmaya çalışalım;
+Şimdi daha iyi anlamak için örnek yapacak olursak `[-3,2,4,,4,9,12,34,42,102,157,180]`'den oluşan veri veri setinden **42** sayısını bulmaya çalışalım;
 
 |                                   |                                  |                                  |                                  |                                  |                                     |                                     |                                     |                                      |                                    |
 | --------------------------------- | -------------------------------- | -------------------------------- | -------------------------------- | -------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- | ------------------------------------ | ---------------------------------- | ---------------------------------- |
