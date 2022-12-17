@@ -14,7 +14,7 @@ author: ["Omer"]
 
 Binary Search her türlü dataset ile çalışabilen ve içerisindeki verinin indexini bulmamızı sağlayan akıllı bir algoritmadır.
 
-Büyük dizilerde doğrdan tek-tek yapılan kontrolden daha hızlı çalışır fakat dizinin küçükten büyüğe veya büyükten küçüğe doğru sıralı olması zorunludur, aksi halede çalışmayacaktır.
+Büyük dizilerde doğrdan tek-tek yapılan kontrolden daha hızlı çalışır fakat dizinin küçükten büyüğe veya büyükten küçüğe doğru sıralı olması zorunludur, aksi halde çalışmayacaktır.
 
 ## Binary Search Nasıl Çalışır?
 
@@ -26,7 +26,7 @@ Binary search her bir işlemde arama uzayını yarı yarıya indirmek üzerinde 
    3. Seçilen değer aradığımız değerden daha büyük ise aradığımız değer, seçtiğimiz verinin sağ tarafındadır.
 2. Yukarıdaki 2. veya 3. seçecekten biri gerçekleşmiş ise kümemizin diğer kısmını sileriz ve yarıya indirmiş oluruz. Ardından 1. adımı tekrardan uygularız ve aradığımız değeri bulana kadar devam ederiz.
 
-Aşşağıdaki örnekte tek-tek yapılan kontrole kıyasla ne kadar hızlı olduğunu görebilirsiniz.
+Aşağıdaki örnekte tek-tek yapılan kontrole kıyasla ne kadar hızlı olduğunu görebilirsiniz.
 
 ![Binary Search Algorithm](/binary-search/algorithm.gif)
 
