@@ -1,5 +1,5 @@
 <nav>
-	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+	<div class="nav nav-tabs" role="tablist">
 
 		{{ $tabTotal := .Get "tabTotal" }}
 		{{ $tabRightAlign := .Get "tabRightAlign" }}
@@ -10,7 +10,7 @@
 
 		<a class="nav-link {{ if eq $i 0 }} active {{ end }}{{ if in $tabRightAlign (add 1 $i) }} ms-auto {{ end }}"
 		   id="{{ (index $tabID $i) }}-tab" data-tab-target="#{{ (index $tabID $i) }}"
-		   type="button" role="tab" aria-controls="nav-home" aria-selected="true">{{ (replaceRE "(\\s)" "" (index $tabName $i)) }}</a>
+		   type="button">{{ (replaceRE "(\\s)" "" (index $tabName $i)) }}</a>
 
 		{{ end }}
 
