@@ -165,6 +165,16 @@
     {{- end }}
 </noscript>
 
+{{ with .Params.image }}
+  <meta itemprop="image" content="{{ site.BaseURL | replaceRE "/$" "" }}{{ .Params.cover.image }}" />
+  <meta property="og:image" content="{{ site.BaseURL | replaceRE "/$" "" }}{{ .Params.cover.image }}" />
+  <meta name="twitter:image" content="{{ site.BaseURL | replaceRE "/$" "" }}{{ .Params.cover.image }}" />
+{{ else }}
+  <meta itemprop="image" content="{{ site.BaseURL | replaceRE "/$" "" }}{{ .Params.cover.image }}" />
+  <meta property="og:image" content="{{ site.BaseURL | replaceRE "/$" "" }}{{ .Params.cover.image }}" />
+  <meta name="twitter:image" content="{{ site.BaseURL | replaceRE "/$" "" }}{{ .Params.cover.image }}" />
+{{ end }}
+
 {{- partial "extend_head.html" . -}}
 
 {{- /* Misc */}}
