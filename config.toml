@@ -6,6 +6,7 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
 enableRobotsTXT = true
 enableRssXML = true
 defaultContentLanguage = 'tr'
+defaultTheme = 'dark'
 
 [taxonomies]
 category = 'categories'
