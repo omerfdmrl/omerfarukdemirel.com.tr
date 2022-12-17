@@ -39,7 +39,7 @@
 {{- $pages := union .RegularPages .Sections }}
 
 {{- if .IsHome }}
-{{- $pages = where site.RegularPages "Section" "makaleler"}}
+{{- $pages = where site.RegularPages "Section" "posts"}}
 {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
 {{- end }}
 
