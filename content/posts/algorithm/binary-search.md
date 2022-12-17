@@ -190,7 +190,7 @@ else:
 ```js
 // X'in indexini döndürür, yoksa -1 döndürür
  
- function binarySearch(arr, x)
+function binarySearch(arr, x)
 {   
     let l = 0;
     let r = arr.length - 1;
