@@ -51,7 +51,8 @@ Son maddede neden **en_yuksek** değer ile topladığımızı merak ediyor olabi
 
 ### Recursive
 
-Python;
+{{< tabs tabTotal="2">}}
+{{< tab tabName="Python" >}}
 
 ```py
 # X'in indexini döndürür, yoksa -1 döndürür
@@ -96,7 +97,8 @@ else:
     print("Element dizide değildir")
 ```
 
-Javascript;
+{{< /tab >}}
+{{< tab tabName="Javascript" >}}
 
 ```js
 // X'in indexini döndürür, yoksa -1 döndürür
@@ -132,9 +134,14 @@ let result = binarySearch(arr, 0, n - 1, x);
                    : document.write(`Element dizinde ${result}. sırada mevcut `);
 ```
 
+{{< /tab >}}
+{{< /tabs >}}
+
+
 ### Iterative
 
-Python;
+{{< tabs tabTotal="2">}}
+{{< tab tabName="Python" >}}
 
 ```py
 # X'in indexini döndürür, yoksa -1 döndürür
@@ -177,8 +184,8 @@ else:
     print("Element dizide değildir")
 ```
 
-
-Javascipt;
+{{< /tab >}}
+{{< tab tabName="Javascript" >}}
 
 ```js
 // X'in indexini döndürür, yoksa -1 döndürür
@@ -219,3 +226,6 @@ result = binarySearch(arr, x);
 (result == -1) ? document.write( "Element dizide değildir")
                    : document.write(`Element dizinde ${result}. sırada mevcut `);
 ```
+
+{{< /tab >}}
+{{< /tabs >}}
