@@ -8,7 +8,7 @@ cover:
   alt: "Binary Search"
   caption: "Binary Search"
   relative: true
-author: ["Omer"]
+author: omer
 ---
 
 ## Binary Search Nedir?
