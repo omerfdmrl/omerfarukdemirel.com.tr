@@ -22,16 +22,16 @@ Büyük dizilerde doğrdan tek-tek yapılan kontrolden daha hızlı çalışır 
 Binary search her bir işlemde arama uzayını yarı yarıya indirmek üzerinde kuruludur. Temel mantığı şu şekildedir;
 
 1. Dizinin tam orasında bulunan veriyi seçer ve bu veri üzerinden kontrol yapar. 3 farklı durum vardır;
-   1. Seçilen değer aradığımız değere eşit ise aradığımız değer bulunmuştur. Değeri geri döndürülür ve algoritma biter.
+   1. Seçilen değer aradığımız değere eşit ise aradığımız değer bulunmuştur. Değer geri döndürülür ve algoritma biter.
    2. Seçilen değer aradığımız değerden daha küçük ise aradığımız değer, seçtiğimiz verinin sol tarafındadır.
    3. Seçilen değer aradığımız değerden daha büyük ise aradığımız değer, seçtiğimiz verinin sağ tarafındadır.
-2. Yukarıdaki 2. veya 3. seçecekten biri gerçekleşmiş ise kümemizin diğer kısmını sileriz ve yarıya indirmiş oluruz. Ardından 1. adımı tekrardan uygularız ve aradığımız değeri bulana kadar devam ederiz.
+2. Yukarıdaki 2. veya 3. seçenekten biri gerçekleşmiş ise kümemizin diğer kısmını sileriz ve yarıya indirmiş oluruz. Ardından 1. adımı tekrardan uygularız ve aradığımız değeri bulana kadar devam ederiz.
 
 Aşağıdaki örnekte tek-tek yapılan kontrole kıyasla ne kadar hızlı olduğunu görebilirsiniz.
 
 ![Binary Search Algorithm](/binary-search/algorithm.gif)
 
-Şimdi daha iyi anlamak için örnek yapacak olursak `[-3,2,4,,4,9,12,34,42,102,157,180]`'den oluşan veri veri setinden **42** sayısını bulmaya çalışalım;
+Şimdi daha iyi anlamak için örnek yapacak olursak `[-3,2,4,,4,9,12,34,42,102,157,180]`'den oluşan veri setinden **42** sayısını bulmaya çalışalım;
 
 |                                   |                                  |                                  |                                  |                                  |                                     |                                     |                                     |                                      |                                    |
 | --------------------------------- | -------------------------------- | -------------------------------- | -------------------------------- | -------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- | ------------------------------------ | ---------------------------------- | ---------------------------------- |
@@ -42,13 +42,13 @@ Aşağıdaki örnekte tek-tek yapılan kontrole kıyasla ne kadar hızlı olduğ
 
 ## Kodlama
 
-Kodlamaya başlamadan önce aşşağıdaki işlemleri bilmemiz gerekmektedir;
+Kodlamaya başlamadan önce aşağıdaki işlemleri bilmemiz gerekmektedir;
 
 1. **Zaman Karmaşıklığı:** O(log n)
 2. **Yardımcı Alan:** O(1)
 3. **Ortanca Değeri Bulma:** en_yuksek + ( en_dusuk + en_yuksek ) / 2
 
-Son maddede neden **en_yuksek** değer ile topladığımızı merak ediyor olabilirsiniz. Direkt olarak `( en_dusuk + en_yuksek ) / 2` de yapabilirdik fakat bu **100%** doğruluk oranı vermeyecektir. Çünkü en düşük ve en yüksek değerlerden daha büyük değerleri aldığımızda başarısız olucaktır. Özellikle en düşük ve en yüksek değerin toplamı datasetimizdeki maximum pozitif değerden büyükse başarısız olucaktır. Sonuçta toplam değer negatif olur ve 2'ye bölündüğünde negatif olarak kaldır.
+Son maddede neden **en_yuksek** değer ile topladığımızı merak ediyor olabilirsiniz. Direkt olarak `( en_dusuk + en_yuksek ) / 2` de yapabilirdik fakat bu **100%** doğruluk oranı vermeyecektir. Çünkü en düşük ve en yüksek değerlerden daha büyük değerleri aldığımızda başarısız olacaktır. Özellikle en düşük ve en yüksek değerin toplamı datasetimizdeki maximum pozitif değerden büyükse başarısız olacaktır. Sonuçta toplam değer negatif olur ve 2'ye bölündüğünde negatif olarak kalır.
 
 ### Recursive
 
