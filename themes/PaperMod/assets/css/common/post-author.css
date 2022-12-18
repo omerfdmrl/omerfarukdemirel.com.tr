@@ -3,6 +3,7 @@
     display: flex;
     margin-bottom: 14px;
     padding: 20px;
+    border-radius: var(--radius);
 }
 
 .post-author-image {
