@@ -1,24 +1,37 @@
 .post-author {
+    background: #2e2e33;
     display: flex;
     margin-bottom: 14px;
+    padding: 20px;
+}
+
+.post-author-image {
+    margin-right: 30px;
 }
 
 .post-author-image img {
-    border-radius: var(--radius);
     width: 160px;
+    border-radius: 50%;
 }
 
 .post-author-content {
-    padding-left: 10px;
     width: 100%
 }
+
+@media screen and (max-width: 992px) {
+    .post-author-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
 
 .post-author-description {
     color: var(--secondary);
 }
 
 .post-author-social {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .post-author-social a {
