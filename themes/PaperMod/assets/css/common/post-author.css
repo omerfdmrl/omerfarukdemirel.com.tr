@@ -1,0 +1,26 @@
+.post-author {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.post-author-image img {
+    border-radius: var(--radius);
+    width: 160px;
+}
+
+.post-author-content {
+    padding-left: 10px;
+    width: 100%
+}
+
+.post-author-description {
+    color: var(--secondary);
+}
+
+.post-author-social {
+    margin-top: 10px;
+}
+
+.post-author-social a {
+    margin-inline-end: 1px
+}
