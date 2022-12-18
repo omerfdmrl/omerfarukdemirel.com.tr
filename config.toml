@@ -43,6 +43,8 @@ tag = 'tags'
   URL = "https://github.com/omerfdmrl/omerfarukdemirel.com.tr/tree/main/content/"
   Text = "Yazıyı Düzenle"
   appendFilePath = true
+[params.assets]
+  disableFingerprinting = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
