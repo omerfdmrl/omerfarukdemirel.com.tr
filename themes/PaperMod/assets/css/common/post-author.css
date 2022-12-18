@@ -1,5 +1,5 @@
 .post-author {
-    background: #2e2e33;
+    background: var(--code-bg);
     display: flex;
     margin-bottom: 14px;
     padding: 20px;
