@@ -46,3 +46,7 @@ tag = 'tags'
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
+
+[permalinks]
+  posts = '/post/:slugorfilename/'
+  pages = '/page/:slugorfilename/'
