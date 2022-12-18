@@ -24,6 +24,7 @@
     {{- end }}
 
     <footer class="post-footer">
+        {{- partial "author.html" . }}
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
         <ul class="post-tags">
             {{- range ($.GetTerms $tags) }}
