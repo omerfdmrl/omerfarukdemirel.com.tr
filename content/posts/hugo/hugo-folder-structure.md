@@ -1,5 +1,6 @@
 ---
 title: Hugo Klasör Yapısı
+description: Bu makalede Hugo klasör yapısını ve nelere yaradığı hakkında bilgi alabilirsiniz.
 slug: hugo-klasor-yapisi
 tags: ["hugo"]
 ShowToc: true
