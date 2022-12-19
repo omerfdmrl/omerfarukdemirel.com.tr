@@ -7,6 +7,7 @@ enableRobotsTXT = true
 enableRssXML = true
 defaultContentLanguage = 'tr'
 defaultTheme = 'dark'
+disableThemeToggle = true
 
 [taxonomies]
 category = 'categories'
