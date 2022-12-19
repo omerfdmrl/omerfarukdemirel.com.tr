@@ -1,5 +1,6 @@
 ---
 title: Binary Search
+description: Bu makalede Binary Search'ın ne olduğu ve nasıl çalıştığı hakkında bilgi alabilirsiniz.
 slug: binary-search
 tags: ["algorithm"]
 ShowToc: true

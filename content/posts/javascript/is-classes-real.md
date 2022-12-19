@@ -1,5 +1,6 @@
 ---
 title: Javascript'de Class'lar Gerçek Midir?
+description: Bu makalede Javascript'de Class'ların gerçek olup olmadığını ve yazar görüşü hakkında bilgi alabilirsiniz.
 slug: javascriptde-classlar-gercek-midir
 tags: ["javascript"]
 ShowToc: true
