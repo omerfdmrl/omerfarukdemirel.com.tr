@@ -9,6 +9,7 @@ cover:
   caption: "Binary Search"
   relative: true
 author: omer
+date: "2022-12-17"
 ---
 
 ## Binary Search Nedir?
