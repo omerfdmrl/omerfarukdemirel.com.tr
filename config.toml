@@ -6,7 +6,6 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
 enableRobotsTXT = true
 enableRssXML = true
 defaultContentLanguage = 'tr'
-defaultTheme = 'dark'
 
 [taxonomies]
 category = 'categories'
@@ -33,6 +32,8 @@ tag = 'tags'
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
   comments = true
+  defaultTheme = 'dark'
+  disableThemeToggle = true
 [params.homeInfoParams]
   Title = 'Ömer Faruk Demirel'
   Content = 'Bloguma hoşgeldiniz'
