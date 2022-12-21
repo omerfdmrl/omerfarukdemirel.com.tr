@@ -1,7 +1,7 @@
 ---
-title: i18n Değişken Kullanımı
+title: Hugo i18n Değişken Kullanımı
 description: Bu makalede Hugo i18n değişken kullanımı hakkında bilgi alabilirsiniz.
-slug: i18-degisken-kullanimi
+slug: hugo-i18-degisken-kullanimi
 tags: ["hugo"]
 ShowToc: true
 cover:
