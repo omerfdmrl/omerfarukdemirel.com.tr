@@ -6,8 +6,8 @@ tags: ["nodejs", "javascript"]
 ShowToc: true
 cover:
   image: "/plugin-system/cover.png"
-  alt: "JavaScript Classes"
-  caption: "JavaScript Classes"
+  alt: "NodeJs Plugin"
+  caption: "NodeJs Plugin"
   relative: true
 author: omer
 date: "2023-03-21"
