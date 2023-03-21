@@ -5,7 +5,7 @@ slug: binary-search
 tags: ["algorithm"]
 ShowToc: true
 cover:
-  image: "/binary-search/cover.png"
+  image: "/algorithm/binary-search/cover.png"
   alt: "Binary Search"
   caption: "Binary Search"
   relative: true

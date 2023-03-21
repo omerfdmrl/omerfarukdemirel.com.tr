@@ -5,7 +5,7 @@ slug: javascriptde-classlar-gercek-midir
 tags: ["javascript"]
 ShowToc: true
 cover:
-  image: "/is-classes-real/cover.png"
+  image: "/javascript/is-classes-real/cover.png"
   alt: "JavaScript Classes"
   caption: "JavaScript Classes"
   relative: true

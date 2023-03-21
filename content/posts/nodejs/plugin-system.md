@@ -5,7 +5,7 @@ slug: nodejs-eklenti-sistemi-kodlama
 tags: ["nodejs", "javascript"]
 ShowToc: true
 cover:
-  image: "/plugin-system/cover.png"
+  image: "/nodejs/plugin-system/cover.png"
   alt: "NodeJs Plugin"
   caption: "NodeJs Plugin"
   relative: true
