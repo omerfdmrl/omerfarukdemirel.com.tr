@@ -15,7 +15,7 @@ date: "2023-03-21"
 
 ## Eklenti Nedir?
 
-JavaScript ile proje geliştirirken projelerin başkaları tarafından kolayca düzenlenebilmesini, geliştirilebilmesini isteyebilirsiniz. Örneğin {{<target-blank href="https://quilljs.com" title="Quill.js Resmi Sitesi">}}Quill.js{{</target-blank>}}' i bilmeyenimiz yoktur; kendisi başarılı bir WYSIWYG editörüdür. Bu kütüphaneyi kullanırken eğer içine özellik eklemek istiyorsak kütüphanenin kendi kodlarını düzenlemeden, bize sağladığı sınırlar içerisinde istediğimiz eklentiyi kodlayabiliriz ve çok daha kullanışlı bir hale getirebiliriz. Kaldı ki Github'da geliştiriciler tarafından kodlanmış bir sürü eklenti mevcuttur.
+JavaScript ile proje geliştirirken projelerin başkaları tarafından kolayca düzenlenebilmesini, geliştirilebilmesini isteyebilirsiniz. Örneğin [Quill.js](https://quilljs.com)' i bilmeyenimiz yoktur; kendisi başarılı bir WYSIWYG editörüdür. Bu kütüphaneyi kullanırken eğer içine özellik eklemek istiyorsak kütüphanenin kendi kodlarını düzenlemeden, bize sağladığı sınırlar içerisinde istediğimiz eklentiyi kodlayabiliriz ve çok daha kullanışlı bir hale getirebiliriz. Kaldı ki Github'da geliştiriciler tarafından kodlanmış bir sürü eklenti mevcuttur.
 
 > {{<color color="yellow">}}Not:{{< /color >}}
 > Anlaşılmadıysa tarayıcınızdaki eklentileri düşünebilirsiniz. Normalde olmayan harika özellikleri tarayıcınıza eklemeyi sağlar.
