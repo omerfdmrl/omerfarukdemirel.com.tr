@@ -1,21 +1,11 @@
 {{ $url := .Destination | safeURL }}
-
 {{ $parseurl := urls.Parse $url }}
-
 {{ if eq $parseurl.Host "omerfarukdemirel.com.tr" }}
-
-<a target="_self" href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
-
+<a title="{{ if .Title}}{{ . | safeHTML }}{{ else }}{{ .Text | safeHTML }}{{ end }}" target="_self" href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
 {{ else }}
-
-    {{ if ne $parseurl.Scheme "http" "https" }}
-
-      <a target="_self" href="{{ print site.BaseURL .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
-
-      {{ else }}
-
-        <a target="_blank" rel="noopener noreferrer" href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
-
-    {{ end }}
-
+{{ if ne $parseurl.Scheme "http" "https" }}
+<a title="{{ if .Title}}{{ . | safeHTML }}{{ else }}{{ .Text | safeHTML }}{{ end }}" target="_self" href="{{ print site.BaseURL .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
+{{ else }}
+<a title="{{ if .Title}}{{ . | safeHTML }}{{ else }}{{ .Text | safeHTML }}{{ end }}" target="_blank" rel="noopener noreferrer" href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
+{{ end }}
 {{ end }}
