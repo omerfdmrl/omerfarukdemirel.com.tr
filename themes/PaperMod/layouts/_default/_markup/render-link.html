@@ -1,0 +1,21 @@
+{{ $url := .Destination | safeURL }}
+
+{{ $parseurl := urls.Parse $url }}
+
+{{ if eq $parseurl.Host "omerfarukdemirel.com.tr" }}
+
+<a href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
+
+{{ else }}
+
+    {{ if ne $parseurl.Scheme "http" "https" }}
+
+      <a href="{{ print site.BaseURL .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
+
+      {{ else }}
+
+        <a rel="noopener noreferrer" href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
+
+    {{ end }}
+
+{{ end }}
