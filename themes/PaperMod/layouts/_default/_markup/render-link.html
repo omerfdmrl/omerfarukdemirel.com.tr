@@ -6,6 +6,4 @@
 {{ if ne $parseurl.Scheme "http" "https" }}
 <a title="{{ if .Title}}{{ . | safeHTML }}{{ else }}{{ .Text | safeHTML }}{{ end }}" target="_self" href="{{ print site.BaseURL .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
 {{ else }}
-<a title="{{ if .Title}}{{ . | safeHTML }}{{ else }}{{ .Text | safeHTML }}{{ end }}" target="_blank" rel="noopener noreferrer" href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>
-{{ end }}
-{{ end }}
+<a title="{{ if .Title}}{{ . | safeHTML }}{{ else }}{{ .Text | safeHTML }}{{ end }}" target="_blank" rel="noopener noreferrer" href="{{ .Destination | safeURL }}">{{ .Text | safeHTML }}</a>{{ end }}{{ end }}
