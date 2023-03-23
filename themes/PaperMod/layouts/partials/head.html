@@ -114,10 +114,11 @@
 {{- end }}
 {{- end }}
 
-{{- /* Base */}}
-{{- $tabs_js := resources.Get "js/tabs.js" }}
-{{- $base_js := (slice $tabs_js ) | resources.Concat "assets/js/base.js" }}
-<script defer crossorigin="anonymous" src="{{ $base_js.RelPermalink }}" integrity="{{ $base_js.Data.Integrity }}"></script>
+{{- /* Tabs */}}
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search")) }}
+{{- $tabs_js := slice (resources.Get "js/tabs.js") | resources.Concat "assets/js/tabs.js" }}
+<script defer crossorigin="anonymous" src="{{ $tabs_js.RelPermalink }}" integrity="{{ $tabs_js.Data.Integrity }}"></script>
+{{- end }}
 
 {{- /* Favicons */}}
 <link rel="icon" href="{{ site.Params.assets.favicon | default "favicon.ico" | absURL }}">
