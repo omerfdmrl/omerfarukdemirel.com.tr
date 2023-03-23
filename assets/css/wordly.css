@@ -1,10 +1,10 @@
 .wordly {
     display: none;
     position: absolute;
-    background: #131d27!important;
+    background: #131d27;
     border-radius: 10px;
     width: 500px;
-    padding: 5px;
+    padding: 0px 5px 5px 5px;
     text-align: center;
     max-height: 400px;
     overflow-y: auto;
