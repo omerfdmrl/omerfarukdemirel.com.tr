@@ -1,0 +1,15 @@
+.wordly {
+    display: none;
+    position: absolute;
+    background: #131d27!important;
+    border-radius: 10px;
+    width: 500px;
+    padding: 5px;
+    text-align: center;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.wordly.wordly-active {
+    display: block;
+}
