@@ -31,7 +31,7 @@ Binary search her bir işlemde arama uzayını yarı yarıya indirmek üzerinde 
 
 Aşağıdaki örnekte tek-tek yapılan kontrole kıyasla ne kadar hızlı olduğunu görebilirsiniz.
 
-![Binary Search Algorithm](/binary-search/algorithm.gif)
+![Binary Search Algorithm](/algorithm/binary-search/algorithm.gif)
 
 Şimdi daha iyi anlamak için örnek yapacak olursak `[-3,2,4,,4,9,12,34,42,102,157,180]`'den oluşan veri setinden **42** sayısını bulmaya çalışalım;
 
