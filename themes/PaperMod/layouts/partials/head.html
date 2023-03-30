@@ -66,6 +66,7 @@
 {{- $license_css := (resources.Get "css/core/license.css") }}
 {{- $tabs_css := (resources.Get "css/tabs.css") }}
 {{- $wordly_css := (resources.Get "css/wordly.css") }}
+{{- $reader_css := (resources.Get "css/reader.css") }}
 {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 
 {{- /* include `an-old-hope` if hljs is on */}}
@@ -78,7 +79,7 @@
 
 {{- /* bundle all required css */}}
 {{- /* Add extended css after theme style */ -}}
-{{- $stylesheet := (slice $license_css $tabs_css $wordly_css $core $extended) | resources.Concat "assets/css/stylesheet.css"  }}
+{{- $stylesheet := (slice $license_css $tabs_css $wordly_css $reader_css $core $extended) | resources.Concat "assets/css/stylesheet.css"  }}
 
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $stylesheet := $stylesheet | fingerprint }}
@@ -127,7 +128,7 @@
 {{- end }}
 
 {{- /* Wordly */}}
-{{- $isWordlyDisabled:= (site.Params.assets.disableWordly | default .Params.disableWordly ) }}
+{{- $isWordlyDisabled:= (site.Params.disableWordly | default .Params.disableWordly ) }}
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isWordlyDisabled)) }}
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $wordly_js := slice (resources.Get "js/wordly.js") | resources.Concat "assets/js/wordly.js" | fingerprint }}
@@ -141,6 +142,18 @@ const words = {{ .Site.Data.words }}
 const words = {{ .Site.Data.words }}
 </script>
 <script defer crossorigin="anonymous" src="{{ $wordly_js.RelPermalink }}" integrity="{{ $wordly_js.Data.Integrity }}"></script>
+{{- end }}
+{{- end }}
+
+{{- /* Reader */}}
+{{- $isReaderDisabled:= (site.Params.assets.disableReader | default .Params.disableReader) }}
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isReaderDisabled)) }}
+{{- if not site.Params.assets.disableFingerprinting }}
+{{- $reader_js := slice (resources.Get "js/reader.js") | resources.Concat "assets/js/reader.js" | fingerprint }}
+<script defer crossorigin="anonymous" src="{{ $reader_js.RelPermalink }}" integrity="{{ $reader_js.Data.Integrity }}"></script>
+{{- else }}
+{{- $reader_js := slice (resources.Get "js/reader.js") | resources.Concat "assets/js/reader.js" }}
+<script defer crossorigin="anonymous" src="{{ $reader_js.RelPermalink }}" integrity="{{ $reader_js.Data.Integrity }}"></script>
 {{- end }}
 {{- end }}
 

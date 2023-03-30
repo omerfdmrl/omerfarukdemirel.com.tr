@@ -35,6 +35,7 @@ tag = 'tags'
   defaultTheme = 'dark'
   disableThemeToggle = true
   disableWordly = false
+  disableReader = false
 [params.homeInfoParams]
   Title = 'Ömer Faruk Demirel'
   Content = 'Bloguma hoşgeldiniz'

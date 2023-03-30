@@ -1,0 +1,25 @@
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  background-color: rgb(173, 35, 35);
+  z-index: 9999;
+  border-radius: var(--radius);
+  border: 0.1px solid var(--theme);
+}
+
+.progress-text {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  color: var(--content);
+  padding: 5px 10px;
+  background-color: var(--tertiary);
+  z-index: 9999;
+  border-radius: var(--radius);
+  border: 5px solid var(--theme);
+}
