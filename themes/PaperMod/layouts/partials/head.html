@@ -130,17 +130,14 @@
 {{- /* Wordly */}}
 {{- $isWordlyDisabled:= (site.Params.disableWordly | default .Params.disableWordly ) }}
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isWordlyDisabled)) }}
+<script>
+    const words = {{ .Site.Data.words }}
+</script>
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $wordly_js := slice (resources.Get "js/wordly.js") | resources.Concat "assets/js/wordly.js" | fingerprint }}
-<script>
-const words = {{ .Site.Data.words }}
-</script>
 <script defer crossorigin="anonymous" src="{{ $wordly_js.RelPermalink }}" integrity="{{ $wordly_js.Data.Integrity }}"></script>
 {{- else }}
 {{- $wordly_js := slice (resources.Get "js/wordly.js") | resources.Concat "assets/js/wordly.js" }}
-<script>
-const words = {{ .Site.Data.words }}
-</script>
 <script defer crossorigin="anonymous" src="{{ $wordly_js.RelPermalink }}" integrity="{{ $wordly_js.Data.Integrity }}"></script>
 {{- end }}
 {{- end }}
@@ -148,6 +145,9 @@ const words = {{ .Site.Data.words }}
 {{- /* Reader */}}
 {{- $isReaderDisabled:= (site.Params.assets.disableReader | default .Params.disableReader) }}
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isReaderDisabled)) }}
+<script>
+    const completed = {{ i18n "completed" }}
+</script>
 {{- if not site.Params.assets.disableFingerprinting }}
 {{- $reader_js := slice (resources.Get "js/reader.js") | resources.Concat "assets/js/reader.js" | fingerprint }}
 <script defer crossorigin="anonymous" src="{{ $reader_js.RelPermalink }}" integrity="{{ $reader_js.Data.Integrity }}"></script>
