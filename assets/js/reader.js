@@ -19,7 +19,7 @@
         const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
 
         progressBar.style.width = `${scrollPercent}%`;
-        progressText.textContent = `${scrollPercent.toFixed(2)}% tamamlandı`;
+        progressText.textContent = `${scrollPercent.toFixed(2)}% ${completed}`;
     }
 
     function getDocHeight() {
